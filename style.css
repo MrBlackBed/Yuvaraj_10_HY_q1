@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin: 2rem 0 2rem 0;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(188, 188, 188);
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 95vw;
+}
+
+.main-topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+img {
+    border: 2px solid white
+}
+
+.main-topic .txt-container {
+    width: 40vw;
+    margin-left: 2rem;
+}
+
+
+
+.txt-container P {
+    margin: 1rem 0 1rem .5rem;
+}
+
+.txt-container p {
+    font-size: smaller
+}
+
+
+.other-topics-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 3rem 0 1.5rem 0;
+    width: 100%;
+}
+
+.other-topics-container h4 {
+    margin: 1rem 0 1rem 0;
+}
+
+.other-topics-container img {
+    width: 320px;
+    height: 213px;
+}
+
+.other-topics-container p {
+    width: 20vw;
+    margin-left: 1rem;
+}
+
+@media (max-width: 1070px) {
+
+    .main {
+        align-items: center;
+    }
+
+    .main-topic {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-topic .txt-container {
+        margin: 2rem 0 0 0;
+        text-align: center;
+    }
+
+    .main-topic .txt-container p {
+        width: 100%;
+    }
+
+    .other-topics-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .ot-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ot-items .txt-container {
+        text-align: center;
+    }
+
+    .ot-items {
+        width: 100%;
+    }
+
+    .ot-items p {
+        width: 35vw;
+    }
+}
